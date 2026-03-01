@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-html{
-    scrollbar-gutter: stable;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+html {
+  overflow-y: auto;
+  scrollbar-gutter: stable;
 }
 body{
     margin: 0;
@@ -14,6 +14,9 @@ a{
     color: #fff;
     text-decoration: none;
 }
+p{
+    margin: 0;
+}
 ul{
     list-style: none;
     padding: 0;
@@ -21,14 +24,12 @@ ul{
     
 
 }
-
 .container {
   box-sizing: border-box;
 
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 15px;
   padding: 0 15px;
 }
 .btn{
@@ -41,7 +42,7 @@ ul{
     font-size: 16px;
     background-color: #F6762C;
     border-radius: 5px;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s;
 
 }
 .btn:hover{
@@ -65,37 +66,37 @@ ul{
 
 }
 
-.header_nav {
 
-
+.header_nav_list{
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
 
-
-.header_nav_list {
-    display: flex;
-    gap: 28px;
-
+.header_nav_list li{
+  padding: 0;
 }
-.header_link {
-    font-size: 14px;
-    opacity: 0.7;
-    font-weight: 400;
-    border-bottom: 2px solid transparent;
-    transition: opacity 0.3s ease, border-color 0.3s ease;
 
+.header_link{
+  display: inline-block;   /* или block — оба ок */
+  padding: 12px 6px;       /* нормальная зона наведения */
+  line-height: 1;
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  transition: color 0.3s;
+  cursor: pointer;
 }
+
 .header_link:hover{
-    opacity: 0.9;
+  color: rgba(255,255,255,0.9);
 }
 
 .header_link.active{
-  opacity: 1;
-  
+  color: #fff;
 }
 
-.header {
 
-}
+
 
 .main {
 
